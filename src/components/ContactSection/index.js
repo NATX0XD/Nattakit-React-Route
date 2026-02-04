@@ -3,37 +3,44 @@ import React from 'react'
 // Contact Section receives props: contact, socialLinks
 const ContactSection = ({ contact, socialLinks }) => {
     return (
-        <section id="contact" className="py-5 bg-dark text-white">
-            <div className="container text-center">
-                <h2 className="mb-5 fw-bold">
-                    <i className="fa-solid fa-address-book me-2"></i>
-                    Contact Me
-                </h2>
+        <section id="contact" className="py-4 bg-dark text-white">
+            <div className="container">
+                <div className="row align-items-center justify-content-center text-center">
+                    {/* Title */}
+                    <div className="col-12 mb-3">
+                        <h5 className="fw-bold mb-0">
+                            <i className="fa-solid fa-address-book me-2"></i>
+                            Contact Me
+                        </h5>
+                    </div>
 
-                {/* Contact Details */}
-                <div className="mb-4">
-                    <p className="mb-2">
-                        <i className="fa-solid fa-envelope me-2"></i>
-                        {contact.email}
-                    </p>
-                    <p className="mb-2">
-                        <i className="fa-solid fa-phone me-2"></i>
-                        {contact.phone}
-                    </p>
-                </div>
+                    {/* Contact Info - inline */}
+                    <div className="col-12 col-md-auto mb-2 mb-md-0">
+                        <span className="me-4">
+                            <i className="fa-solid fa-envelope me-1"></i>
+                            <small>{contact.email}</small>
+                        </span>
+                        <span>
+                            <i className="fa-solid fa-phone me-1"></i>
+                            <small>{contact.phone}</small>
+                        </span>
+                    </div>
 
-                {/* Social Links */}
-                <div className="d-flex justify-content-center gap-4">
-                    {socialLinks.map((link, index) => (
-                        <a
-                            key={index}
-                            href={link.url}
-                            className="text-white fs-2"
-                            title={link.name}
-                        >
-                            <i className={link.icon}></i>
-                        </a>
-                    ))}
+                    {/* Social Links */}
+                    <div className="col-12 mt-2">
+                        {socialLinks.map((link, index) => (
+                            <a
+                                key={index}
+                                href={link.url}
+                                className="text-white mx-2 fs-5"
+                                title={link.name}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className={link.icon}></i>
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

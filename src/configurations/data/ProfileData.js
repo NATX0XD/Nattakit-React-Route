@@ -5,7 +5,7 @@ const ProfileData = {
     // Basic Info
     name: "Nattakit Jinakul",
     nickname: "Nat",
-    title: "Web Developer | Student",
+    title: "KMUTNB TCT35 | Web tech REACTS.JS",
     bio: "Hello! I'm a passionate student interested in Web Development and currently learning React.js",
 
     // Profile Image
@@ -15,8 +15,8 @@ const ProfileData = {
     personalInfo: {
         fullName: "Mr. Nattakit Jinakul",
         nickname: "Nat",
-        age: 25,
-        dateOfBirth: "January 1, 2001",
+        age: 22,
+        dateOfBirth: "August 9, 2004",
         nationality: "Thai",
         religion: "Buddhism",
         address: "Bangkok, Thailand"
@@ -24,7 +24,7 @@ const ProfileData = {
 
     // Contact Info
     contact: {
-        email: "nattakit@gmail.com",
+        email: "s6802041510325@kmutnb.email.ac.th",
         phone: "+66 123 456 789",
         line: "@nattakit"
     },
@@ -33,17 +33,17 @@ const ProfileData = {
     education: [
         {
             degree: "Bachelor's Degree",
-            major: "Computer Science",
-            school: "University Name",
-            year: "2021 - Present"
+            major: "Faculty of Technical Education Computer Education",
+            school: " King Mongkut's University of Technology North Bangkok",
+            year: "2024 - Present"
         }
     ],
 
     // Social Links
     socialLinks: [
-        { name: "Facebook", icon: "fa-brands fa-facebook", url: "#" },
-        { name: "Instagram", icon: "fa-brands fa-instagram", url: "#" },
-        { name: "GitHub", icon: "fa-brands fa-github", url: "#" }
+        { name: "Facebook", icon: "fa-brands fa-facebook", url: "https://web.facebook.com/nattakit98.nat" },
+        { name: "Instagram", icon: "fa-brands fa-instagram", url: "https://www.instagram.com/nn_nostalune/" },
+        { name: "GitHub", icon: "fa-brands fa-github", url: "https://github.com/NATX0XD" }
     ]
 }
 
