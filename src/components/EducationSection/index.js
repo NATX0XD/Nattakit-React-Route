@@ -1,6 +1,4 @@
-import React from 'react'
 
-// Education Section receives props: education (array)
 const EducationSection = ({ education }) => {
     return (
         <section id="education" className="py-5 bg-white">

@@ -1,12 +1,11 @@
 import React from 'react'
 
-// Hero Section receives props: name, title, profileImage, bio
 const HeroSection = ({ name, title, profileImage, bio }) => {
     return (
         <section id="hero" className="py-5 bg-white">
             <div className="container">
                 <div className="row align-items-center justify-content-center">
-                    {/* Profile Image */}
+
                     <div className="col-md-4 text-center mb-4 mb-md-0">
                         <img
                             src={profileImage}
@@ -16,7 +15,7 @@ const HeroSection = ({ name, title, profileImage, bio }) => {
                         />
                     </div>
 
-                    {/* Info */}
+
                     <div className="col-md-6 text-center text-md-start">
                         <h1 className="display-5 fw-bold mb-2">{name}</h1>
                         <p className="lead text-muted mb-3">{title}</p>

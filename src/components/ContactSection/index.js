@@ -1,12 +1,9 @@
-import React from 'react'
-
-// Contact Section receives props: contact, socialLinks
 const ContactSection = ({ contact, socialLinks }) => {
     return (
         <section id="contact" className="py-4 bg-dark text-white">
             <div className="container">
                 <div className="row align-items-center justify-content-center text-center">
-                    {/* Title */}
+                    
                     <div className="col-12 mb-3">
                         <h5 className="fw-bold mb-0">
                             <i className="fa-solid fa-address-book me-2"></i>
@@ -14,7 +11,7 @@ const ContactSection = ({ contact, socialLinks }) => {
                         </h5>
                     </div>
 
-                    {/* Contact Info - inline */}
+                    
                     <div className="col-12 col-md-auto mb-2 mb-md-0">
                         <span className="me-4">
                             <i className="fa-solid fa-envelope me-1"></i>
@@ -26,7 +23,7 @@ const ContactSection = ({ contact, socialLinks }) => {
                         </span>
                     </div>
 
-                    {/* Social Links */}
+                    
                     <div className="col-12 mt-2">
                         {socialLinks.map((link, index) => (
                             <a

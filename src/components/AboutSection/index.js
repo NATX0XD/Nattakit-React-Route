@@ -1,6 +1,4 @@
-import React from 'react'
 
-// About Section receives props: personalInfo, contact
 const AboutSection = ({ personalInfo, contact }) => {
     return (
         <section id="about" className="py-5 bg-light">
@@ -11,7 +9,7 @@ const AboutSection = ({ personalInfo, contact }) => {
                 </h2>
 
                 <div className="row justify-content-center g-3">
-                    {/* Personal Info */}
+                    
                     <div className="col-12 col-lg-5">
                         <div className="card border-0 shadow h-100">
                             <div className="card-header bg-dark text-white py-2">
@@ -53,7 +51,7 @@ const AboutSection = ({ personalInfo, contact }) => {
                         </div>
                     </div>
 
-                    {/* Contact Info */}
+                    
                     <div className="col-12 col-lg-5">
                         <div className="card border-0 shadow h-100">
                             <div className="card-header bg-dark text-white py-2">

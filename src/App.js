@@ -9,15 +9,12 @@ function App() {
 
   return (
     <div className="App">
-      {/* Navbar - ส่ง props: name */}
       <NavbarIndex name={name} />
 
-      {/* Main Content */}
       <main>
         <Home />
       </main>
 
-      {/* Footer - ส่ง props: name */}
       <FooterIndex name={name} />
     </div>
   );

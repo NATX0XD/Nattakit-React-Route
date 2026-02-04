@@ -1,6 +1,6 @@
 import React from 'react'
 
-// Footer receives props: name
+
 const FooterIndex = ({ name }) => {
     const currentYear = new Date().getFullYear();
 
