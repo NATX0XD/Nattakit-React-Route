@@ -1,21 +1,28 @@
 import NavbarIndex from './components/Navbar';
 import FooterIndex from './components/Footer';
-import Home from './pages/Home';
 import ProfileData from './configurations/data/ProfileData';
+import NavItems from './configurations/NavItems';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import PageNotFound from './pages/PageNotFound';
+
 
 function App() {
-  // ดึงชื่อจาก ProfileData เพื่อส่ง props ไปยัง Navbar และ Footer
   const { name } = ProfileData;
-
   return (
     <div className="App">
-      <NavbarIndex name={name} />
 
-      <main>
-        <Home />
-      </main>
-
-      <FooterIndex name={name} />
+      <BrowserRouter>
+        <NavbarIndex name={name} />
+        <main>
+          <Routes>
+            {NavItems.map((item, index) => (
+              <Route key={index} path={item.path} element={item.element} />
+            ))}
+            <Route path="*" element={<PageNotFound />} />
+          </Routes>
+        </main>
+        <FooterIndex name={name} />
+      </BrowserRouter>
     </div>
   );
 }
