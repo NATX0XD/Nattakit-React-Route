@@ -48,12 +48,14 @@ const NavbarIndex = () => {
                 </button>
 
                 <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-                    <ul className="navbar-nav ms-auto gap-lg-4">
+                    <ul className="navbar-nav ms-auto gap-lg-4 align-items-center">
                         {NavbarData.map((item, index) => (
                             <li key={index} className="nav-item">
                                 <Link
-                                    className={`nav-link fw-medium position-relative hover-underline ${location.pathname === item.path ? 'active text-primary' : 'text-secondary'
-                                        }`}
+                                    className={item.name === 'Contact'
+                                        ? "btn btn-primary rounded-pill px-4 fw-bold shadow-sm hover-scale ms-lg-2"
+                                        : `nav-link fw-medium position-relative hover-underline ${location.pathname === item.path ? 'active text-primary' : 'text-secondary'}`
+                                    }
                                     to={item.path}
                                     onClick={handleLinkClick}
                                 >
@@ -62,9 +64,6 @@ const NavbarIndex = () => {
                             </li>
                         ))}
                     </ul>
-                    <Link to="/contact" className="btn btn-primary rounded-pill px-4 ms-lg-4 fw-bold shadow-sm d-none d-lg-block">
-                        Hire Me
-                    </Link>
                 </div>
             </div>
         </nav>

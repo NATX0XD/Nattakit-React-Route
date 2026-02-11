@@ -79,25 +79,28 @@ const ProfileData = {
 
     activities: [
         {
-            title: "Web Development Workshop",
-            description: "Participated in a comprehensive workshop on modern web technologies including React and Node.js.",
-            date: "Jan 2024",
-            image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            tags: ["React", "Workshop"]
+            title: "Full Stack Development",
+            description: "Passionate about both Frontend and Backend development, utilizing technologies like React, Next.js, and Node.js.",
+            date: "Current",
+            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            tags: ["Coding", "Full Stack", "Dev"],
+            link: "https://github.com/NATX0XD"
         },
         {
-            title: "Hackathon 2023",
-            description: "Collaborated with a team to build an innovative solution for local businesses within 48 hours.",
-            date: "Nov 2023",
-            image: "https://images.unsplash.com/photo-1504384308090-c54be3855833?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            tags: ["Hackathon", "Teamwork"]
+            title: "Formula 1 Enthusiast",
+            description: "A big fan of Formula 1 racing, following the engineering marvels and strategic depth of the sport.",
+            date: "Hobby",
+            image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            tags: ["F1", "Racing", "Speed"],
+            link: "https://www.formula1.com/"
         },
         {
-            title: "Community Service",
-            description: "Volunteered for teaching basic computer skills to children at a local community center.",
-            date: "Aug 2023",
-            image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-            tags: ["Volunteer", "Teaching"]
+            title: "Food & Cuisine",
+            description: "Love exploring new cuisines, tasting different dishes, and enjoying food culture.",
+            date: "Lifestyle",
+            image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            tags: ["Food", "Eating", "Tasting"],
+            link: "https://food.trueid.net/detail/M6oyloE4klNB"
         }
     ]
 }

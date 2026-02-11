@@ -43,9 +43,9 @@ const Activity = () => {
                 )}
 
                 <div className="text-center mb-5">
-                    <span className="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill mb-3 fw-bold tracking-wider">MY PARTICIPATION</span>
-                    <h2 className="display-4 fw-bold">Activities & Events</h2>
-                    <p className="lead text-muted">A collection of workshops, hackathons, and community services.</p>
+                    <span className="badge bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill mb-3 fw-bold tracking-wider">LIFESTYLE & HOBBIES</span>
+                    <h2 className="display-4 fw-bold">My Interests</h2>
+                    <p className="lead text-muted">Things I love, from coding to racing and food.</p>
                 </div>
 
                 <div className="row g-4">
@@ -70,13 +70,19 @@ const Activity = () => {
                                     <h5 className="card-title fw-bold mb-3">{activity.title}</h5>
                                     <p className="card-text text-secondary mb-4">{activity.description}</p>
 
-                                    <div className="d-flex flex-wrap gap-2">
+                                    <div className="d-flex flex-wrap gap-2 mb-4">
                                         {activity.tags && activity.tags.map((tag, i) => (
                                             <span key={i} className="badge bg-light text-secondary border border-light-subtle rounded-pill fw-normal">
                                                 #{tag}
                                             </span>
                                         ))}
                                     </div>
+
+                                    {activity.link && (
+                                        <a href={activity.link} target="_blank" rel="noreferrer" className="btn btn-outline-primary w-100 rounded-pill fw-bold hover-scale">
+                                            Visit <i className="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>
