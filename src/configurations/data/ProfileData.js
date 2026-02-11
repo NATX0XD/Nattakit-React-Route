@@ -1,4 +1,5 @@
-import Me from "../../images/me/me1.JPG"
+import logoTCT from "../../images/logo/LOGO-TCT.jpeg";
+import logoKMUTNB from "../../images/logo/LOGO-KMUTNB.png";
 
 const ProfileData = {
     // Basic Info for Fallback or other uses
@@ -26,7 +27,7 @@ const ProfileData = {
             school: "King Mongkut's University of Technology North Bangkok",
             year: "2024 - Present",
             gpa: "3.85",
-            logo: "https://upload.wikimedia.org/wikipedia/th/thumb/7/7f/Kmutnb_logo.svg/1200px-Kmutnb_logo.svg.png",
+            logo: logoKMUTNB,
             url: "https://www.kmutnb.ac.th/",
             icon: "fa-solid fa-university"
         },
@@ -37,7 +38,7 @@ const ProfileData = {
             school: "Thonburi Commercial College",
             year: "2023 - 2025",
             gpa: "3.98",
-            logo: "https://upload.wikimedia.org/wikipedia/th/1/1d/Thonburi_Commercial_College_Logo.png",
+            logo: logoTCT,
             url: "https://www.panitthon.ac.th",
             icon: "fa-solid fa-school"
         },
@@ -48,20 +49,11 @@ const ProfileData = {
             school: "Thonburi Commercial College",
             year: "2020 - 2023",
             gpa: "3.96",
-            logo: "https://upload.wikimedia.org/wikipedia/th/1/1d/Thonburi_Commercial_College_Logo.png",
+            logo: logoTCT,
             url: "https://www.panitthon.ac.th",
             icon: "fa-solid fa-school"
-        },
-        {
-            degree: "High School",
-            major: "Science-Math",
-            school: "Debsirin School",
-            year: "2018 - 2024",
-            gpa: "3.50",
-            logo: "https://upload.wikimedia.org/wikipedia/th/thumb/9/9b/Debsirin_School_Logo.svg/1200px-Debsirin_School_Logo.svg.png",
-            url: "https://www.debsirin.ac.th/",
-            icon: "fa-solid fa-school"
         }
+
     ],
 
     internships: [

@@ -80,11 +80,15 @@ const Education = () => {
                                                 )}
                                             </div>
 
-                                            {edu.gpa && (
-                                                <div className="mt-4 pt-3 border-top border-light">
-                                                    <span className="fw-bold text-primary">GPA: {edu.gpa}</span>
-                                                </div>
-                                            )}
+                                            <div className="mt-4 pt-3 border-top border-light d-flex justify-content-between align-items-center flex-wrap gap-3">
+                                                {edu.gpa && <span className="fw-bold text-primary">GPA: {edu.gpa}</span>}
+
+                                                {edu.url && (
+                                                    <a href={edu.url} target="_blank" rel="noreferrer" className="btn btn-primary btn-sm rounded-pill px-4 shadow-sm hover-translate-up">
+                                                        Visit Website <i className="fa-solid fa-arrow-up-right-from-square ms-2 small"></i>
+                                                    </a>
+                                                )}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
